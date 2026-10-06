@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liftoff Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --bg: #F4F7FF; --card: #ffffffcc; --text: #111; --muted: #5b6474; --accent: #007AFF; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #11142a; --card: #ffffff12; --text: #f2f4fa; --muted: #a3abbd; --accent: #0A84FF; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  .card { background: var(--card); border-radius: 20px; padding: 24px; }
+  h1 { font-size: 32px; margin: 0 0 4px; } h2 { font-size: 20px; margin: 28px 0 8px; }
+  p, li { color: var(--text); } .muted { color: var(--muted); } a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>Liftoff Privacy Policy</h1>
+<p class="muted">Effective October 6, 2026</p>
+<div class="card">
+<p>Liftoff is an App Store Connect client for iOS developers. This policy explains what data the app handles and where it goes. In short: we do not run our own servers, we do not create accounts, and we do not sell or share your data for advertising.</p>
+
+<h2>Your App Store Connect API key</h2>
+<p>You connect Liftoff with your own App Store Connect API key. The key, its Key ID and Issuer ID, and the optional vendor number are stored only on your device, in the iOS Keychain. Liftoff uses the key to talk directly to Apple's App Store Connect API; the key and the data Apple returns (apps, builds, testers, reviews, sales and analytics) are not sent to us or to anyone else.</p>
+
+<h2>AI features</h2>
+<p>When you use an AI feature (translating or rewriting your App Store text, generating keywords, translating a review or drafting a reply), the text involved is sent to Google's Gemini models through Firebase AI Logic to produce the result. Google processes it under the <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing terms</a>. Firebase App Check is used to verify that these requests come from the genuine app. Nothing is sent until you start an AI feature.</p>
+
+<h2>Subscriptions</h2>
+<p>Liftoff Pro is sold through the App Store. Purchases are processed by Apple; we never see your payment details. Subscription status is managed by <a href="https://www.revenuecat.com/privacy">RevenueCat</a>, which receives an anonymous app user ID, purchase and transaction information, and basic device information (such as the iOS version and store country) so that your subscription can be verified and restored.</p>
+
+<h2>Public App Store data</h2>
+<p>To convert sales into your chosen currency, the app downloads public exchange rates from open.er-api.com. To show an app's overall star rating, it reads the public App Store listing from Apple's iTunes Lookup service using only the app's ID. These requests contain no personal data.</p>
+
+<h2>Feedback</h2>
+<p>Messages you send from Settings › Send Feedback, and our replies, are stored in Google Cloud Firestore (Firebase), together with the anonymous RevenueCat user ID that identifies your conversation, the app version and whether you subscribe. Only the app on your device and the developer can read them. Don't include personal or confidential information you don't want us to have; to have a conversation deleted, ask in it.</p>
+
+<h2>Diagnostics</h2>
+<p>The app keeps a technical log on your device to help troubleshoot problems. It stays on the device unless you choose to share it.</p>
+<p>When the app crashes or runs into an error, a report is sent to <a href="https://firebase.google.com/support/privacy">Firebase Crashlytics</a> (Google) so we can fix it. A report contains technical details (device model, iOS and app version, the error and a short list of the screens and actions that led up to it), the anonymous RevenueCat user ID and whether you subscribe. It never contains your API key, your App Store Connect data, review texts or anything you typed.</p>
+
+<h2>Children</h2>
+<p>Liftoff is a tool for developers and is not directed at children.</p>
+
+<h2>Your choices</h2>
+<p>You can remove an account in Settings at any time, which deletes its key from the Keychain, and deleting the app removes all data stored on the device. Requests about subscription data held by RevenueCat can be sent to us and we will forward them.</p>
+
+<h2>Changes and contact</h2>
+<p>We may update this policy; the effective date above will change when we do. Questions or requests: <a href="https://github.com/mark-osypenko/liftoff-legal/issues">open an issue</a>.</p>
+</div>
+<p class="muted">Terms of Use: Liftoff is provided under Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard End User License Agreement</a>.</p>
+</main>
+</body>
+</html>
